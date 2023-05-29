@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: assisted-events-stream-e1fd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/assisted-installer-tenant/assisted-events-stream/assisted-events-stream-e1fd@sha256:4795d412d180f734d29974fe7bfe8d9d4e2daba31bc29b5126310a3e1b727d2d
+        name: container-image
+        resources: {}
+status: {}

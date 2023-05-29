@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: assisted-events-stream-e1fd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: assisted-events-stream-e1fd
+    app.kubernetes.io/part-of: assisted-events-stream
+  name: assisted-events-stream-e1fd
+spec:
+  port:
+    targetPort: 6379
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: assisted-events-stream-e1fd
+    weight: 100
+status: {}
