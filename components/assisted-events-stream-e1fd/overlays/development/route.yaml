@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: assisted-events-stream-e1fd
     app.kubernetes.io/part-of: assisted-events-stream
-  name: assisted-events-stream-e1umyb
+  name: assisted-events-stream-e1urlo
 spec:
   port:
     targetPort: 6379
