@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: assisted-events-stream-e1fd
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/assisted-installer-tenant/assisted-events-stream/assisted-events-stream-e1fd@sha256:589c1d28ca88e781180a672ec37635cb2a1504a9bdf14486e08e63fcd8429b36
+      - image: quay.io/redhat-user-workloads/assisted-installer-tenant/assisted-events-stream/assisted-events-stream-e1fd@sha256:4795d412d180f734d29974fe7bfe8d9d4e2daba31bc29b5126310a3e1b727d2d
         imagePullPolicy: Always
         name: container-image
         ports:
